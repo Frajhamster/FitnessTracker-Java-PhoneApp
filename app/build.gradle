@@ -5,7 +5,7 @@ android {
     buildToolsVersion "30.0.0"
 
     defaultConfig {
-        applicationId "frajhamdoingstuff.epizy.com.fitnesstracker"
+        applicationId "frajhamdoingstuff.epizy.com.testingenvironment"
         minSdkVersion 16
         targetSdkVersion 30
         versionCode 1

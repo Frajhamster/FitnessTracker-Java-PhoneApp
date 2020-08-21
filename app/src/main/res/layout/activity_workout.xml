@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WorkoutActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/activity_workout_pagerslider"
+        app:layout_constraintVertical_weight="1"
+        android:background="@drawable/bottomline">
+
+        <Button
+            android:id="@+id/activity_workout_button_return"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:foreground="@drawable/ic_workout_returnarrow"
+            android:background="@drawable/bottomline"
+
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/activity_workout_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:text="Workout name"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/activity_workout_button_popupmenu"
+            app:layout_constraintStart_toEndOf="@+id/activity_workout_button_return"
+            app:layout_constraintTop_toTopOf="parent" />
+        <Button
+            android:id="@+id/activity_workout_button_popupmenu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:foreground="@drawable/ic_workout_verticaldots"
+            android:background="@drawable/bottomline"
+
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/activity_workout_pagerslider"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#c0000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_weight="8"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

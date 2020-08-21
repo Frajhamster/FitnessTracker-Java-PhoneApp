@@ -4,147 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D3D3D3"
-    android:orientation="vertical"
-
+    android:background="#EEEEEE"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:id="@+id/mainMenu"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:visibility="visible"
-        android:weightSum="100">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="30">
-
-            <TextView
-                android:id="@+id/textAppName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="10dp"
-                android:fontFamily="sans-serif-condensed-medium"
-                android:text="Fitness Tracker"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                android:textColor="#000000" />
-
-            <Button
-                android:id="@+id/buttonAddWorkout"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/textAppName"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_marginStart="20dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/button_normal"
-                android:text="  Add Workout  " />
-
-            <ToggleButton
-                android:id="@+id/toggleButtonDeleteWorkout"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/textAppName"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginRight="20dp"
-                android:background="@drawable/button_normal"
-                android:text="  Delete Workout  "
-                android:textOff="  Delete mode OFF  "
-                android:textOn="  Delete mode ON " />
-        </RelativeLayout>
-
-        <ScrollView
-            android:id="@+id/scrollView1"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="65">
-
-            <LinearLayout
-                android:id="@+id/linearLayoutScrollView1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-            </LinearLayout>
-        </ScrollView>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/workoutMenu"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:visibility="gone"
-        android:weightSum="100">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="15">
-
-            <Button
-                android:id="@+id/buttonBack"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_marginTop="15dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_toStartOf="@+id/buttonAddExercise"
-                android:layout_toLeftOf="@+id/buttonAddExercise"
-                android:background="@drawable/button_normal"
-                android:text=" Back " />
-
-            <Button
-                android:id="@+id/buttonAddExercise"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="15dp"
-                android:background="@drawable/button_normal"
-                android:text=" Add exercise " />
-
-            <Button
-                android:id="@+id/buttonDeleteExercise"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginTop="15dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_toEndOf="@+id/buttonAddExercise"
-                android:layout_toRightOf="@+id/buttonAddExercise"
-                android:background="@drawable/button_normal"
-                android:text=" Delete " />
-        </RelativeLayout>
-        <ScrollView
-            android:id="@+id/scrollView2"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="85">
-
-            <LinearLayout
-                android:id="@+id/linearLayoutScrollView2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-            </LinearLayout>
-        </ScrollView>
-    </LinearLayout>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/coming_soon"
+        android:text="FITNESS TRACKER"
+        android:textColor="#000"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

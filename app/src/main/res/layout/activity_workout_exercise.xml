@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorExerciseBackground">
+
+    <TextView
+        android:id="@+id/activity_workout_exercise_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+        android:text="Exercise Name"
+        android:textColor="@color/colorOrange"
+        android:textSize="25sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/activity_workout_exercise_set_1"
+        android:tag="activity_workout_exercise_set_1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bottomlinesmall"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_workout_exercise_name">
+
+        <TextView
+            android:id="@+id/text_set_1"
+            android:tag="text_set_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:background="@drawable/whitecircle"
+            android:gravity="center"
+            android:text="1"
+            android:textAlignment="center"
+            android:textColor="@color/colorLightRed"
+            android:textSize="30sp"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button_reps_1"
+            android:layout_width="60dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/whiteborder"
+            android:tag="button_reps_1"
+            android:text="reps"
+            android:textColor="@color/colorWhite"
+            android:textSize="17sp"
+            app:layout_constraintStart_toEndOf="@+id/text_set_1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button_weight_1"
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/whiteborder_reverse"
+            android:tag="button_weight_1"
+            android:text="weight"
+            android:textColor="@color/colorWhite"
+            android:textSize="13sp"
+            app:layout_constraintStart_toEndOf="@+id/button_reps_1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button_wtype_1"
+            android:tag="button_wtype_1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_workout_normal"
+
+            app:layout_constraintBottom_toBottomOf="@+id/button_weight_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/button_weight_1"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/activity_workout_exercise_add_1"
+        android:tag="activity_workout_exercise_add_1"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/addbuttonborder"
+        android:text="Add"
+        android:textColor="@color/colorWhite"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_workout_exercise_set_1" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/activity_workout_exercise_set_2"
+        android:tag="activity_workout_exercise_set_2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bottomlinesmall"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_workout_exercise_add_1">
+        <TextView
+            android:id="@+id/text_set_2"
+            android:tag="text_set_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:background="@drawable/whitecircle"
+            android:gravity="center"
+            android:text="2"
+            android:textAlignment="center"
+            android:textColor="@color/colorLightRed"
+            android:textSize="30sp"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button_reps_2"
+            android:tag="button_reps_2"
+            android:layout_width="60dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/whiteborder"
+            android:text="reps"
+            android:textColor="@color/colorWhite"
+            android:textSize="17sp"
+            app:layout_constraintStart_toEndOf="@+id/text_set_2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button_weight_2"
+            android:tag="button_weight_2"
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/whiteborder_reverse"
+            android:text="weight"
+            android:textColor="@color/colorWhite"
+            android:textSize="13sp"
+            app:layout_constraintStart_toEndOf="@+id/button_reps_2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button_wtype_2"
+            android:tag="button_wtype_2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_workout_normal"
+
+            app:layout_constraintBottom_toBottomOf="@+id/button_weight_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/button_weight_2"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/activity_workout_exercise_add_2"
+        android:tag="activity_workout_exercise_add_2"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/addbuttonborder"
+        android:text="Add"
+        android:textColor="@color/colorWhite"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_workout_exercise_set_2" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/activity_workout_exercise_set_3"
+        android:tag="activity_workout_exercise_set_3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bottomlinesmall"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_workout_exercise_add_2">
+        <TextView
+            android:id="@+id/text_set_3"
+            android:tag="text_set_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:background="@drawable/whitecircle"
+            android:gravity="center"
+            android:text="3"
+            android:textAlignment="center"
+            android:textColor="@color/colorLightRed"
+            android:textSize="30sp"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button_reps_3"
+            android:tag="button_reps_3"
+            android:layout_width="60dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/whiteborder"
+            android:text="reps"
+            android:textColor="@color/colorWhite"
+            android:textSize="17sp"
+            app:layout_constraintStart_toEndOf="@+id/text_set_3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button_weight_3"
+            android:tag="button_weight_3"
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/whiteborder_reverse"
+            android:text="weight"
+            android:textColor="@color/colorWhite"
+            android:textSize="13sp"
+            app:layout_constraintStart_toEndOf="@+id/button_reps_3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button_wtype_3"
+            android:tag="button_wtype_3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_workout_normal"
+
+            app:layout_constraintBottom_toBottomOf="@+id/button_weight_3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/button_weight_3"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/activity_workout_exercise_add_3"
+        android:tag="activity_workout_exercise_add_3"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/addbuttonborder"
+        android:text="Add"
+        android:textColor="@color/colorWhite"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_workout_exercise_set_3" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/activity_workout_exercise_set_4"
+        android:tag="activity_workout_exercise_set_4"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bottomlinesmall"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_workout_exercise_add_3">
+        <TextView
+            android:id="@+id/text_set_4"
+            android:tag="text_set_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:background="@drawable/whitecircle"
+            android:gravity="center"
+            android:text="4"
+            android:textAlignment="center"
+            android:textColor="@color/colorLightRed"
+            android:textSize="30sp"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button_reps_4"
+            android:tag="button_reps_4"
+            android:layout_width="60dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/whiteborder"
+            android:text="reps"
+            android:textColor="@color/colorWhite"
+            android:textSize="17sp"
+            app:layout_constraintStart_toEndOf="@+id/text_set_4"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button_weight_4"
+            android:tag="button_weight_4"
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/whiteborder_reverse"
+            android:text="weight"
+            android:textColor="@color/colorWhite"
+            android:textSize="13sp"
+            app:layout_constraintStart_toEndOf="@+id/button_reps_4"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button_wtype_4"
+            android:tag="button_wtype_4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_workout_cluster"
+
+            app:layout_constraintBottom_toBottomOf="@+id/button_weight_4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/button_weight_4"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/activity_workout_exercise_add_4"
+        android:tag="activity_workout_exercise_add_4"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/addbuttonborder"
+        android:text="Add"
+        android:textColor="@color/colorWhite"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_workout_exercise_set_4" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/activity_workout_exercise_set_5"
+        android:tag="activity_workout_exercise_set_5"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bottomlinesmall"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_workout_exercise_add_4">
+        <TextView
+            android:id="@+id/text_set_5"
+            android:tag="text_set_5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:background="@drawable/whitecircle"
+            android:gravity="center"
+            android:text="5"
+            android:textAlignment="center"
+            android:textColor="@color/colorLightRed"
+            android:textSize="30sp"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button_reps_5"
+            android:tag="button_reps_5"
+            android:layout_width="60dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/whiteborder"
+            android:text="reps"
+            android:textColor="@color/colorWhite"
+            android:textSize="17sp"
+            app:layout_constraintStart_toEndOf="@+id/text_set_5"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button_weight_5"
+            android:tag="button_weight_5"
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/whiteborder_reverse"
+            android:text="weight"
+            android:textColor="@color/colorWhite"
+            android:textSize="13sp"
+            app:layout_constraintStart_toEndOf="@+id/button_reps_5"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button_wtype_5"
+            android:layout_width="0dp"
+            android:layout_height="3dp"
+            android:background="@drawable/ic_workout_drop"
+            android:tag="button_wtype_5"
+
+            app:layout_constraintBottom_toBottomOf="@+id/button_weight_5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/button_weight_5"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
